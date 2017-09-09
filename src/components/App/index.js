@@ -12,7 +12,12 @@ class App extends Component {
   render() {
     const { className, ...props } = this.props;
     return (
-      <Header />
+    	<div className='wrapper'>
+      		<Header />
+      		<div className='slider'>
+      			<img src='/images/slider.jpg' />
+      		</div>
+      	</div>
     );
   }
 }

@@ -18,6 +18,17 @@
   font-size: large;
 }
 
+.slider img {
+  width:100%;
+  z-index: 1;
+}
+
+.slider {
+/*  margin: -50px 0 0 0;
+  z-index: 1;
+  position: relative;*/
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

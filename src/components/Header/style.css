@@ -2,6 +2,9 @@
 .topnav {
     background: linear-gradient(to bottom, rgba(255,255,255,1) 20%,rgba(255,255,255,0) 100%);;
     overflow: hidden;
+    z-index:2;
+    position: fixed;
+    width:100%;
 }
 
 .topnav-logo {
@@ -18,14 +21,13 @@
     text-decoration: none;
     font-size: 17px;
     -webkit-transition: all 2s; /* Safari */
-    transition: all 2s;
+    transition: all 0.5s ease;
+    border: 1px solid transparent;
 }
 
-
 /* Change the color of links on hover */
-.topnav a:hover {
-    border-style:solid none;
-    border-width: 1px;
+.topnav a:not(.topnav-logo):hover {
+    border: 1px solid #000;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
